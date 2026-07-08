@@ -7,7 +7,7 @@
     "build": "npm run generate && next build",
     "start": "next start",
     "lint": "eslint",
-    "generate": "tsx lib/parse-repo.ts"
+    "generate": "rm -rf solutions && git clone https://github.com/ammar-06/Leetcode-Solutions.git solutions && tsx lib/parse-repo.ts"
   },
   "dependencies": {
     "framer-motion": "^12.42.2",
