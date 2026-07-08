@@ -6,10 +6,10 @@ import { fileURLToPath } from 'url';
 const __filename_compat = typeof __filename !== 'undefined' ? __filename : fileURLToPath(import.meta.url);
 const __dirname_compat = path.dirname(__filename_compat);
 
-// webapp/ is at Leetcode-Solutions/webapp/
-// lib/parse-repo.ts is at Leetcode-Solutions/webapp/lib/parse-repo.ts
-// REPO_ROOT should be Leetcode-Solutions/
-const REPO_ROOT = path.resolve(__dirname_compat, '../..');
+// webapp/ is at Leetcode-Portfolio-Web/
+// lib/parse-repo.ts is at Leetcode-Portfolio-Web/lib/parse-repo.ts
+// REPO_ROOT should be Leetcode-Portfolio-Web/solutions
+const REPO_ROOT = path.resolve(__dirname_compat, '../solutions');
 const WEBAPP_ROOT = path.resolve(__dirname_compat, '..');
 
 const EXT_TO_LANG: Record<string, string> = {
