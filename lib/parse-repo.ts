@@ -241,7 +241,7 @@ if (require.main === module) {
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
   const outPath = path.join(outDir, 'problems.json');
   fs.writeFileSync(outPath, JSON.stringify(problems, null, 2));
-  
+
   // Print summary
   const langs = new Set(problems.map((p) => p.language));
   const cats = new Set(problems.flatMap((p) => p.categories));
